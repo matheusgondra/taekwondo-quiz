@@ -1,20 +1,22 @@
+import { Background } from "@/components/Background";
 import { TaekwondoIcon } from "@/components/icons/TaekwondoIcon";
-import styles from "./page.module.css";
 import Link from "next/link";
+import styles from "./page.module.css";
 
-export default function Home() {
+
+export default async function Home() {
 	return (
 		<>
-			<header className={styles.header}>
+			<Background>
 				<TaekwondoIcon />
-			</header>
+			</Background>
 			<main className={styles.main}>
 				<h1>
 					Taekwondo
 					<br />
 					Quiz
 				</h1>
-				<Link className={styles.button} href="/question/1">Iniciar</Link>
+				<Link className={styles.button} href="/question/1" >Iniciar</Link>
 			</main>
 		</>
 	);

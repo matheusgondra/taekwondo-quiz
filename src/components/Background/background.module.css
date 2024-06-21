@@ -1,0 +1,12 @@
+.background {
+	background-color: var(--main-color);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	height: 284px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	gap: 1rem;
+}

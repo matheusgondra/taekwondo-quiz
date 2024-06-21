@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #357FEE;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+button {
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-family: inherit;
+	width: 100%;
+	max-width: 296px;
+	padding: 1rem;
+}

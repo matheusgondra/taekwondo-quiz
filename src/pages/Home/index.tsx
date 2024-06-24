@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import "./home.css";
+import { useStartQuiz } from "../../hooks";
 
 export function Home() {
+	useStartQuiz();
+
 	return (
 		<>
 			<header className="header">

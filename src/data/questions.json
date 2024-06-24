@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"question": "Qual é o nome do uniforme do Taekwondo?",
+		"options": ["Dobok", "Kimono", "Karategi", "Farda"],
+		"answer": "Dobok"
+	},
+	{
+		"id": 2,
+		"question": "Qual é o nome do local de treinamento?",
+		"options": ["Dojan", "Tatame", "Arena", "Ginásio"],
+		"answer": "Dojan"
+	},
+	{
+		"id": 3,
+		"question": "Em qual região da Korea surgio o Taekwondo?",
+		"options": ["Manjo", "Seul", "Gyeongju", "Gyeonggi"],
+		"answer": "Manjo"
+	}
+]

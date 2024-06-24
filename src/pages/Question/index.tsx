@@ -1,25 +1,54 @@
+import { MouseEvent, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { Button } from "../../components/Button";
 import { OptionButton } from "../../components/OptionButton";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuestions } from "../../hooks";
 import "./question.css";
-import { useEffect } from "react";
-import { Button } from "../../components/Button";
 
 export function Question() {
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const question = useQuestions(parseInt(id!));
-	
+	const [selectedOption, setSelectedOption] = useState<string>("");
+	const [isSelecting, setIsSelecting] = useState<boolean>(false);
+
 	useEffect(() => {
 		if (!question) {
 			navigate("/");
 		}
 	}, [question, navigate]);
 
+	useEffect(() => {
+		if (question) {
+			setSelectedOption("");
+			setIsSelecting(false);
+		}
+	}, [question]);
+
 	if (!question) {
 		return null;
 	}
+
+	const handleOptionClick = (event: MouseEvent<HTMLButtonElement>) => {
+		const text = event.currentTarget.textContent;
+		if (text) {
+			const response = text.slice(1, text.length);
+			setSelectedOption(response);
+			setIsSelecting(true);
+		}
+	};
+
+	const getVariant = (option: string) => {
+		if (selectedOption) {
+			if (option === question.answer) {
+				return "correct";
+			} else if (selectedOption === option) {
+				return "wrong";
+			}
+		}
+		return "default";
+	};
 
 	return (
 		<div className="question-page">
@@ -32,12 +61,21 @@ export function Question() {
 			</header>
 			<main className="question-page-container">
 				<ul className="options">
-					<li><OptionButton variant="correct" option="A" text={question.options[0]} /></li>
-					<li><OptionButton variant="default" option="B" text={question.options[1]} /></li>
-					<li><OptionButton variant="default" option="C" text={question.options[2]} /></li>
-					<li><OptionButton variant="default" option="D" text={question.options[3]} /></li>
+					{question.options.map((option, index) => (
+						<li key={index}>
+							<OptionButton
+								variant={getVariant(option)}
+								disabled={isSelecting}
+								option={String.fromCharCode(65 + index)}
+								text={option}
+								setResponse={handleOptionClick}
+							/>
+						</li>
+					))}
 				</ul>
-				<Button path={`/question/${parseInt(id!) + 1}`} disabled={false} >Continuar</Button>
+				<Button path={`/question/${parseInt(id!) + 1}`} disabled={!isSelecting}>
+					Continuar
+				</Button>
 			</main>
 		</div>
 	);

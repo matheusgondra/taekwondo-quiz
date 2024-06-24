@@ -1,12 +1,15 @@
+import { MouseEvent } from "react";
 import "./option-button.css";
 
 interface OptionButtonProps {
-	option: "A" | "B" | "C" | "D";
+	option: string;
 	text: string;
 	variant: "default" | "correct" | "wrong";
+	disabled?: boolean;
+	setResponse: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export function OptionButton({ option, text, variant }: OptionButtonProps) {	
+export function OptionButton({ option, text, variant, disabled, setResponse }: OptionButtonProps) {
 	const setBorder = (variant: string) => {
 		switch (variant) {
 			case "correct":
@@ -16,10 +19,10 @@ export function OptionButton({ option, text, variant }: OptionButtonProps) {
 			default:
 				return "";
 		}
-	}
+	};
 
 	return (
-		<button className={`option-button ${setBorder(variant)}`}>
+		<button className={`option-button ${setBorder(variant)}`} disabled={disabled} onClick={setResponse}>
 			<span className="option-button__option">{option}</span>
 			{text}
 		</button>

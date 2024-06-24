@@ -8,6 +8,7 @@
 	width: 100%;
 	height: 66px;
 	transition: 8ms;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .option-button__option {
@@ -19,8 +20,10 @@
 
 .correct {
 	border: 3px solid #28E621;
+	color: #28E621
 }
 
 .wrong {
 	border: 3px solid #ED738C;
+	color: #ED738C;
 }

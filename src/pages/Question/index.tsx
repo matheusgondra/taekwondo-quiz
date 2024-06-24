@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { OptionButton } from "../../components/OptionButton";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuestions } from "../../hooks";

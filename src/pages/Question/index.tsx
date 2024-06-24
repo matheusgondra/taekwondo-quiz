@@ -4,6 +4,7 @@ import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuestions } from "../../hooks";
 import "./question.css";
 import { useEffect } from "react";
+import { Button } from "../../components/Button";
 
 export function Question() {
 	const { id } = useParams();
@@ -36,7 +37,7 @@ export function Question() {
 					<li><OptionButton option="C" text={question.options[2]} /></li>
 					<li><OptionButton option="D" text={question.options[3]} /></li>
 				</ul>
-				<Link className="btn" to={`/question/${parseInt(id!) + 1}`}>Continuar</Link>
+				<Button path={`/question/${parseInt(id!) + 1}`} disabled={false} >Continuar</Button>
 			</main>
 		</div>
 	);

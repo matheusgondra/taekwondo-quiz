@@ -32,10 +32,10 @@ export function Question() {
 			</header>
 			<main className="question-page-container">
 				<ul className="options">
-					<li><OptionButton option="A" text={question.options[0]} /></li>
-					<li><OptionButton option="B" text={question.options[1]} /></li>
-					<li><OptionButton option="C" text={question.options[2]} /></li>
-					<li><OptionButton option="D" text={question.options[3]} /></li>
+					<li><OptionButton variant="correct" option="A" text={question.options[0]} /></li>
+					<li><OptionButton variant="default" option="B" text={question.options[1]} /></li>
+					<li><OptionButton variant="default" option="C" text={question.options[2]} /></li>
+					<li><OptionButton variant="default" option="D" text={question.options[3]} /></li>
 				</ul>
 				<Button path={`/question/${parseInt(id!) + 1}`} disabled={false} >Continuar</Button>
 			</main>

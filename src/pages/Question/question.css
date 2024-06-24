@@ -42,6 +42,7 @@
 	flex-direction: column;
 	gap: 20px;
 	list-style: none;
+	width: 296px;
 }
 
 .question-page-container {
@@ -52,4 +53,5 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 }

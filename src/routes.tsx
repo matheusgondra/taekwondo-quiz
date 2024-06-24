@@ -7,7 +7,7 @@ export function AppRouter() {
 		<Router>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/question" element={<Question />} />
+				<Route path="/question/:id" element={<Question />} />
 			</Routes>
 		</Router>
 	);

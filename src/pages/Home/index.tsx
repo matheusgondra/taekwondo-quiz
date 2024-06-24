@@ -1,6 +1,6 @@
-import "./home.css";
-import { Button } from "../../components/Button";
+import { Link } from "react-router-dom";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
+import "./home.css";
 
 export function Home() {
 	return (
@@ -14,7 +14,7 @@ export function Home() {
 					<br />
 					Quiz
 				</h1>
-				<Button>Iniciar</Button>
+				<Link className="button-init" to="/question/1">Iniciar</Link>
 			</main>
 		</>
 	);

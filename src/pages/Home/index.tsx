@@ -3,7 +3,7 @@ import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import "./home.css";
 import { useStartQuiz } from "../../hooks";
 
-export function Home() {
+export function HomePage() {
 	useStartQuiz();
 
 	return (
@@ -17,7 +17,9 @@ export function Home() {
 					<br />
 					Quiz
 				</h1>
-				<Link className="button-init" to="/question/1">Iniciar</Link>
+				<Link className="button-init" to="/question/1">
+					Iniciar
+				</Link>
 			</main>
 		</>
 	);

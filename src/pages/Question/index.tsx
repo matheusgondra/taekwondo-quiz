@@ -6,7 +6,7 @@ import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuestions } from "../../hooks";
 import "./question.css";
 
-export function Question() {
+export function QuestionPage() {
 	const { id } = useParams();
 	const navigate = useNavigate();
 	const question = useQuestions(parseInt(id!));

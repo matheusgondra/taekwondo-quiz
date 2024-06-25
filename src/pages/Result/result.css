@@ -1,0 +1,33 @@
+.result-page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(100vh - 284px);
+	padding: 40px 2rem;
+	padding-bottom: 2rem;
+}
+
+.result-page-container div {
+	text-align: center;
+	width: 159px;
+}
+
+.result-page-container div p {
+	margin-top: 12px;
+}
+
+.result-page-container p {
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+.result-correct {
+	color: #28E621;
+}
+
+.result-wrong {
+	color: #ED738C;
+}

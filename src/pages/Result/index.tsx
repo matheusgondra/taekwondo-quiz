@@ -1,16 +1,38 @@
-import { Link } from "react-router-dom";
+import { Button } from "../../components/Button";
+import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuizContext } from "../../hooks";
+import "./result.css";
 
 export function ResultPage() {
 	const { result } = useQuizContext();
-	console.log("Resultado na outra pagina: ", result);
+	const totalQuestions = 16;
 
 	return (
 		<>
-			<h1>Resultado:</h1>
-			<p>Acertou: {result.correct} / 16</p>
-			<p>Erros: {result.wrong} / 16</p>
-			<Link to="/">Voltar</Link>
+			<header className="header">
+				<TaekwondoIcon />
+			</header>
+			<main className="result-page-container">
+				<div>
+					<TaekwondoIcon variant="detailed" />
+					<p>
+						Acertos:
+						<span>
+							<span className="result-correct">{result.correct}</span> / {totalQuestions}
+						</span>
+					</p>
+					<p>
+						Erros:
+						<span>
+							<span className="result-wrong">{result.wrong}</span> / {totalQuestions}
+						</span>
+					</p>
+				</div>
+
+				<Button path="/" disabled={false}>
+					Voltar
+				</Button>
+			</main>
 		</>
 	);
 }

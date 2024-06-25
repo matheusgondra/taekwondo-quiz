@@ -5,6 +5,7 @@ import { OptionButton } from "../../components/OptionButton";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
 import { useQuestions, useQuizContext } from "../../hooks";
 import "./question.css";
+import { shuffleList } from "../../helpers/shuffle";
 
 export function QuestionPage() {
 	const { id } = useParams();
@@ -69,7 +70,7 @@ export function QuestionPage() {
 			</header>
 			<main className="question-page-container">
 				<ul className="options">
-					{question.options.map((option, index) => (
+					{shuffleList(question.options).map((option, index) => (
 						<li key={index}>
 							<OptionButton
 								variant={getVariant(option)}

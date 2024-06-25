@@ -2,49 +2,177 @@
 	{
 		"id": 1,
 		"question": "Qual é o nome do uniforme do Taekwondo?",
-		"options": ["Dobok", "Kimono", "Karategi", "Farda"],
+		"options": [
+			"Dobok",
+			"Kimono",
+			"Karategi",
+			"Farda"
+		],
 		"answer": "Dobok"
 	},
 	{
 		"id": 2,
 		"question": "Qual é o nome do local de treinamento?",
-		"options": ["Dojan", "Tatame", "Arena", "Ginásio"],
+		"options": [
+			"Dojan",
+			"Tatame",
+			"Arena",
+			"Ginásio"
+		],
 		"answer": "Dojan"
 	},
 	{
 		"id": 3,
 		"question": "Em qual região da Coreia surgiu o Taekwondo?",
-		"options": ["Manjo", "Seul", "Gyeongju", "Gyeonggi"],
+		"options": [
+			"Manjo",
+			"Seul",
+			"Gyeongju",
+			"Gyeonggi"
+		],
 		"answer": "Manjo"
 	},
 	{
 		"id": 4,
 		"question": "Há quanto tempo existe o taekwondo?",
-		"options": ["por volta de 2 mil anos", "por volta de 1 mil anos", "por volta de 500 anos", "por volta de 100 anos"],
+		"options": [
+			"por volta de 2 mil anos",
+			"por volta de 1 mil anos",
+			"por volta de 500 anos",
+			"por volta de 100 anos"
+		],
 		"answer": "por volta de 2 mil anos"
 	},
 	{
 		"id": 5,
 		"question": "Onde surgiu a primeira academia de taekwondo no Brasil?",
-		"options": ["Academia Liberdade - SP", "Academia Liberdade - PE", "Academia Liberdade - RJ", "Academia Liberdade - MG"],
+		"options": [
+			"Academia Liberdade - SP",
+			"Academia Liberdade - PE",
+			"Academia Liberdade - RJ",
+			"Academia Liberdade - MG"
+		],
 		"answer": "Academia Liberdade - SP"
 	},
 	{
 		"id": 6,
 		"question": "Quem foi o fundador do estilo Chan moo kwan?",
-		"options": ["Hwang Kee", "Choi Hong Hi", "Lee Won Kuk", "Choi Bae Dal"],
+		"options": [
+			"Hwang Kee",
+			"Choi Hong Hi",
+			"Lee Won Kuk",
+			"Choi Bae Dal"
+		],
 		"answer": "Hwang Kee"
 	},
 	{
 		"id": 7,
 		"question": "Onde foi a primeira aparição do taekwondo como esporte olímpico?",
-		"options": ["Seul - 1988", "Barcelona - 1992", "Atlanta - 1996", "Sydney - 2000"],
+		"options": [
+			"Seul - 1988",
+			"Barcelona - 1992",
+			"Atlanta - 1996",
+			"Sydney - 2000"
+		],
 		"answer": "Sydney - 2000"
 	},
 	{
 		"id": 8,
 		"question": "Qual é o nome do poomsae de 10° Gub?",
-		"options": ["Sadjuthirygui", "Taegeuk Il Jang", "Koryo", "Keumgang"],
-		"answer": "Sadjuthirygui"
+		"options": [
+			"Saju Tchirugui",
+			"Taegeuk Il Jang",
+			"Koryo",
+			"Keumgang"
+		],
+		"answer": "Saju Tchirugui"
+	},
+	{
+		"id": 9,
+		"question": "Qual é a base onde a perna da frente fica flexionada e a perna de trás esticada?",
+		"options": [
+			"Apgubi",
+			"Dwitgubi",
+			"Ap-seogi",
+			"Hakdari-seogi"
+		],
+		"answer": "Apgubi"
+	},
+	{
+		"id": 10,
+		"question": "Qual é a base onde a perna de trás concentra entre 60 a 70% do peso",
+		"options": [
+			"Apgubi",
+			"Dwitgubi",
+			"Ap-seogi",
+			"Hakdari-seogi"
+		],
+		"answer": "Dwitgubi"
+	},
+	{
+		"id": 11,
+		"question": "Quantos movimentos tem o poomsae do 10° Gub (Saju Tchirugui)?",
+		"options": [
+			"20",
+			"19",
+			"18",
+			"22"
+		],
+		"answer": "19"
+	},
+	{
+		"id": 12,
+		"question": "Qual é o significado do Taekwondo?",
+		"options": [
+			"Caminho dos pés e das mãos atráves do conhecimento",
+			"A arte da guerra e da estratégia militar",
+			"O caminho espiritual da meditação e da paz",
+			"A prática da força e da resistência física"
+		],
+		"answer": "Caminho dos pés e das mãos atráves do conhecimento"
+	},
+	{
+		"id": 13,
+		"question": "O que significa o poomsae?",
+		"options": [
+			"Formas",
+			"Luta",
+			"Preparar",
+			"Rosto"
+		],
+		"answer": "Formas"
+	},
+	{
+		"id": 14,
+		"question": "Qual é o nome do chute lateral no taekwondo?",
+		"options": [
+			"Yop Tchagui",
+			"Ap Tchagui",
+			"Dollyo Tchagui",
+			"Bandae Dollyo Tchagui"
+		],
+		"answer": "Yop Tchagui"
+	},
+	{
+		"id": 15,
+		"question": "Qual o comando significa preparar para a luta",
+		"options": [
+			"Kyorugui Joonbi",
+			"Joonbi",
+			"Kyorugui Charyot",
+			"Kyorugui Kyongye"
+		],
+		"answer": "Kyorugui Joonbi"
+	},
+	{
+		"id": 16,
+		"question": "O que significa 'Lateral da mão aberta'",
+		"options": [
+			"Sonnal",
+			"Sonnal Dung",
+			"Son Dung",
+			"Ran Sonkut"
+		],
+		"answer": "Sonnal"
 	}
 ]

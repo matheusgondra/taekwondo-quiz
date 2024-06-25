@@ -25,6 +25,7 @@ export function QuestionPage() {
 		if (question) {
 			setSelectedOption("");
 			setIsSelecting(false);
+			question.options = shuffleList(question.options);
 		}
 	}, [question]);
 
@@ -70,7 +71,7 @@ export function QuestionPage() {
 			</header>
 			<main className="question-page-container">
 				<ul className="options">
-					{shuffleList(question.options).map((option, index) => (
+					{question.options.map((option, index) => (
 						<li key={index}>
 							<OptionButton
 								variant={getVariant(option)}

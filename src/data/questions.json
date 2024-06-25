@@ -16,5 +16,35 @@
 		"question": "Em qual região da Coreia surgiu o Taekwondo?",
 		"options": ["Manjo", "Seul", "Gyeongju", "Gyeonggi"],
 		"answer": "Manjo"
+	},
+	{
+		"id": 4,
+		"question": "Há quanto tempo existe o taekwondo?",
+		"options": ["por volta de 2 mil anos", "por volta de 1 mil anos", "por volta de 500 anos", "por volta de 100 anos"],
+		"answer": "por volta de 2 mil anos"
+	},
+	{
+		"id": 5,
+		"question": "Onde surgiu a primeira academia de taekwondo no Brasil?",
+		"options": ["Academia Liberdade - SP", "Academia Liberdade - PE", "Academia Liberdade - RJ", "Academia Liberdade - MG"],
+		"answer": "Academia Liberdade - SP"
+	},
+	{
+		"id": 6,
+		"question": "Quem foi o fundador do estilo Chan moo kwan?",
+		"options": ["Hwang Kee", "Choi Hong Hi", "Lee Won Kuk", "Choi Bae Dal"],
+		"answer": "Hwang Kee"
+	},
+	{
+		"id": 7,
+		"question": "Onde foi a primeira aparição do taekwondo como esporte olímpico?",
+		"options": ["Seul - 1988", "Barcelona - 1992", "Atlanta - 1996", "Sydney - 2000"],
+		"answer": "Sydney - 2000"
+	},
+	{
+		"id": 8,
+		"question": "Qual é o nome do poomsae de 10° Gub?",
+		"options": ["Sadjuthirygui", "Taegeuk Il Jang", "Koryo", "Keumgang"],
+		"answer": "Sadjuthirygui"
 	}
 ]

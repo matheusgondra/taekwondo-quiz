@@ -133,7 +133,7 @@
 	},
 	{
 		"id": 13,
-		"question": "O que significa o poomsae?",
+		"question": "O que significa poomsae?",
 		"options": [
 			"Formas",
 			"Luta",
@@ -155,7 +155,7 @@
 	},
 	{
 		"id": 15,
-		"question": "Qual o comando significa preparar para a luta",
+		"question": "Qual o comando significa \"preparar para a luta\"",
 		"options": [
 			"Kyorugui Joonbi",
 			"Joonbi",
@@ -166,7 +166,7 @@
 	},
 	{
 		"id": 16,
-		"question": "O que significa 'Lateral da mão aberta'",
+		"question": "O que significa \"Lateral da mão aberta\"",
 		"options": [
 			"Sonnal",
 			"Sonnal Dung",

@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Button } from "../../components/Button";
 import { OptionButton } from "../../components/OptionButton";
 import { TaekwondoIcon } from "../../components/TaekwondoIcon";
-import { useQuestions } from "../../hooks";
+import { useQuestions, useQuizContext } from "../../hooks";
 import "./question.css";
 
 export function QuestionPage() {
@@ -12,10 +12,11 @@ export function QuestionPage() {
 	const question = useQuestions(parseInt(id!));
 	const [selectedOption, setSelectedOption] = useState<string>("");
 	const [isSelecting, setIsSelecting] = useState<boolean>(false);
+	const { result, markCorrect, markWrong } = useQuizContext();
 
 	useEffect(() => {
 		if (!question) {
-			navigate("/");
+			navigate("/result");
 		}
 	}, [question, navigate]);
 
@@ -36,6 +37,13 @@ export function QuestionPage() {
 			const response = text.slice(1, text.length);
 			setSelectedOption(response);
 			setIsSelecting(true);
+
+			if (response === question.answer) {
+				markCorrect();
+			} else {
+				markWrong();
+			}
+			console.log(result);
 		}
 	};
 

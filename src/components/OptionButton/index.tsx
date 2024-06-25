@@ -24,7 +24,7 @@ export function OptionButton({ option, text, variant, disabled, setResponse }: O
 	return (
 		<button className={`option-button ${setBorder(variant)}`} disabled={disabled} onClick={setResponse}>
 			<span className="option-button__option">{option}</span>
-			{text}
+			<span className="option-button__text">{text}</span>
 		</button>
 	);
 }

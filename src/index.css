@@ -20,4 +20,5 @@ button {
 	width: 100%;
 	max-width: 296px;
 	padding: 1rem;
+	-webkit-tap-highlight-color: transparent;
 }

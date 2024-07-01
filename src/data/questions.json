@@ -174,5 +174,93 @@
 			"Ran Sonkut"
 		],
 		"answer": "Sonnal"
+	},
+	{
+		"id": 17,
+		"question": "Qual é a cor da faixa do 7° Gub?",
+		"options": [
+			"Amarela",
+			"Verde",
+			"Amarelo com verde",
+			"Verde com azul"
+		],
+		"answer": "Amarelo com verde"
+	},
+	{
+		"id": 18,
+		"question": "Qual é o significado literal de Saju Tchirugui?",
+		"options": [
+			"Defesa e ataque para os 4 lados",
+			"Defesa e ataque para os 8 lados",
+			"Defesa e ataque para os 6 lados",
+			"Defesa e ataque para os 2 lados"
+		],
+		"answer": "Defesa e ataque para os 4 lados"
+	},
+	{
+		"id": 19,
+		"question": "Qual é o significado abstrato da faixa branca?",
+		"options": [
+			"pureza ou inocência",
+			"humildade ou modéstia",
+			"paz ou tranquilidade",
+			"esperança ou renovação"
+		],
+		"answer": "pureza ou inocência"
+	},
+	{
+		"id": 20,
+		"question": "Qual é o significado literal da faixa branca?",
+		"options": [
+			"inicío do aprendizado",
+			"desconhecido",
+			"ignorância",
+			"escuridão"
+		],
+		"answer": "inicío do aprendizado"
+	},
+	{
+		"id": 21,
+		"question": "Qual desses não é um chute do taekwondo?",
+		"options": [
+			"Yop Tchagui",
+			"Ap Tchagui",
+			"Bandal tchagui",
+			"Jumok Tchirigui"
+		],
+		"answer": "Jumok Tchirigui"
+	},
+	{
+		"id": 22,
+		"question": "Qual é o soco dado com a mão contraria a perna da frente?",
+		"options": [
+			"Barô Jirugui",
+			"Bandê Jirugui",
+			"Ap Jirugui",
+			"Arê Jirugui"
+		],
+		"answer": "Barô Jirugui"
+	},
+	{
+		"id": 23,
+		"question": "Qual é o soco dado com a mão do mesmo lado da perna da frente?",
+		"options": [
+			"Barô Jirugui",
+			"Bandê Jirugui",
+			"Ap Jirugui",
+			"Arê Jirugui"
+		],
+		"answer": "Barê Jirugui"
+	},
+	{
+		"id": 24,
+		"question": "Qual é a defesa para baixo?",
+		"options": [
+			"Arê Makki",
+			"Barô Makki",
+			"Bandê Makki",
+			"Ap Makki"
+		],
+		"answer": "Arê Makki"
 	}
 ]

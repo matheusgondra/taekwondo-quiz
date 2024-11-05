@@ -135,12 +135,12 @@
 		"id": 13,
 		"question": "O que significa poomsae?",
 		"options": [
-			"Formas",
-			"Luta",
+			"Formar",
+			"Luta imaginária",
 			"Preparar",
 			"Rosto"
 		],
-		"answer": "Formas"
+		"answer": "Luta imaginária"
 	},
 	{
 		"id": 14,
@@ -262,5 +262,16 @@
 			"Ap Makki"
 		],
 		"answer": "Arê Makki"
+	},
+	{
+		"id": 25,
+		"question": "Qual é o nome da parte de baixo do uniforme?",
+		"options": [
+			"Calça",
+			"Dobok",
+			"Farda",
+			"Bermuda"
+		],
+		"answer": "Calça"
 	}
 ]
